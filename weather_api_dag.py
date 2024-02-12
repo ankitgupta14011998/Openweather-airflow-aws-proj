@@ -50,7 +50,7 @@ def transform_load_data(task_instance):
     df = pd.DataFrame([dic])
     now = datetime.now()
     date_string = now.strftime('%Y%m%d%H%M%S')
-    credentials = {'key':'ASIAW3MD6IE5474IITF5','secret':'hW/CRBE8X5bGtUOq5swLEZK80hjyw0QYJ/YHL2fi','token':'FwoGZXIvYXdzEAsaDGooHEIOLN5edZYrQiKCAU95O0Nz0BYWuw2LUPmNa8LsZsy7r7ZMFzZA5ODyisDl1EQxOeTD8o16aXZfLOgmWTnIqUAORwSy3AC0CIWUZeBCG//GpmSkQp7DboBM5LJjCpk05ELire1kxBwRLco1OZU6y4WjNkyrh00ryZFB9cyMKhqieTXf+FcSa0oRY6N+LvIo/52ZrQYyKPFjm63VMJ/KDkZxGK5ak8PhjccN2fAggRZajS7FTEFNM6a7AFze10A='}
+    credentials = {'key':'ASIAW3MD6IE5474I****','secret':'hW/CRBE8X5bGtUOq5swLEZK80hjyw0QYJ/*******','token':'FwoGZXIvYXdzEAsaDGooHEIOLN5edZYrQiKCAU95O0Nz0BYWuw2LUPmNa8LsZsy7r7ZMFzZA5ODyisDl1EQxOeTD8o16aXZfLOgmWTnIqUAORwSy3AC0CIWUZeBCG//GpmSkQp7DboBM5LJjCpk05ELire1kxBwRLco1OZU6y4WjNkyrh00ryZFB9cyMKhqieTXf+FcSa0oRY6N+LvIo/52ZrQYyKPFjm63VMJ/KDkZxGK5ak8PhjccN2fAggRZajS7FTEFNM6********'}
     df.to_csv(f's3://openweather-api-bucket/weather_data_{city_name}_{date_string}.csv',index=False, storage_options=credentials)
 
 default_args={
